@@ -10,7 +10,8 @@ import com.example.myapplication.MessageReceiveListener;
 interface IMessageService {
     //发送消息
     //实体类需要标记关键字in，基本类型不用
-    void sendMessage(in Message message);
+    //主进程发送消息，子进程接收消息
+    void sendMessageForServer(in Message message);
 
     //注册监听
     void registerMessageReceiveListener(MessageReceiveListener messageReceiveListener);

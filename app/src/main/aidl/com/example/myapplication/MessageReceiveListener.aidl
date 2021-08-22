@@ -8,6 +8,6 @@ import com.example.myapplication.Message;
 */
 interface MessageReceiveListener {
 
-    //接收消息
+    //子进程发送消息，主进程接收消息
     void onReceiveMessage(in Message message);
 }

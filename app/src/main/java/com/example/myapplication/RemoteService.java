@@ -119,7 +119,7 @@ public class RemoteService extends Service {
 
     private IMessageService.Stub messageService = new IMessageService.Stub() {
         @Override
-        public void sendMessage(Message message) throws RemoteException {
+        public void sendMessageForServer(Message message) throws RemoteException {
             //接收客户端的消息
             handler.post(() -> Utils.toast(message.getContent()));
             message.setSendSuccess(isConnected);

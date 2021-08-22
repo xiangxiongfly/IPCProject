@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             message.setContent("主进程发送消息-BBB");
             try {
                 //向服务端发送消息
-                messageServiceProxy.sendMessage(message);
+                messageServiceProxy.sendMessageForServer(message);
             } catch (RemoteException e) {
                 e.printStackTrace();
             }

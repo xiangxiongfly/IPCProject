@@ -23,7 +23,7 @@
         android:id="@+id/isconnected"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="connect" />
+        android:text="isconnect" />
 
     <Button
         android:id="@+id/sendMessage"
